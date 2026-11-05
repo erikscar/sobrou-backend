@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace myfinance.Migrations
+namespace sobrou.Migrations
 {
     /// <inheritdoc />
     public partial class AddMoreFieldsOnUserEntity : Migration

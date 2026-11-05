@@ -1,9 +1,9 @@
 using System;
-using myfinance.Domain.DTOS;
-using myfinance.Domain.Entities;
-using myfinance.Shared.Results;
+using sobrou.Domain.DTOS;
+using sobrou.Domain.Entities;
+using sobrou.Shared.Results;
 
-namespace myfinance.Application.Services.Interfaces;
+namespace sobrou.Application.Services.Interfaces;
 
 public interface IUserService
 {

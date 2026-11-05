@@ -3,18 +3,18 @@ using System.Security.Claims;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using myfinance.Application.Services.Interfaces;
-using myfinance.Domain.Entities;
+using sobrou.Application.Services.Interfaces;
+using sobrou.Domain.Entities;
 using Microsoft.Extensions.Options;
-using myfinance.Infrastructure.Config;
-using myfinance.Domain.DTOS;
+using sobrou.Infrastructure.Config;
+using sobrou.Domain.DTOS;
 
-namespace myfinance.Infrastructure.Services;
+namespace sobrou.Infrastructure.Services;
 
 public class TokenService : ITokenService
 {
-    private readonly IOptions<MyFinanceSettings> _settings;
-    public TokenService(IOptions<MyFinanceSettings> settings)
+    private readonly IOptions<SobrouSettings> _settings;
+    public TokenService(IOptions<SobrouSettings> settings)
     {
         _settings = settings;
     }

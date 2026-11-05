@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace myfinance.Migrations
+namespace sobrou.Migrations
 {
     /// <inheritdoc />
     public partial class CreateUser : Migration

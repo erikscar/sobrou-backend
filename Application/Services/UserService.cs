@@ -1,12 +1,12 @@
 using System.Security.Claims;
 using Azure;
-using myfinance.Application.Services.Interfaces;
-using myfinance.Domain.DTOS;
-using myfinance.Domain.Entities;
-using myfinance.Infrastructure.Repositories.Interfaces;
-using myfinance.Shared.Results;
+using sobrou.Application.Services.Interfaces;
+using sobrou.Domain.DTOS;
+using sobrou.Domain.Entities;
+using sobrou.Infrastructure.Repositories.Interfaces;
+using sobrou.Shared.Results;
 
-namespace myfinance.Application.Services;
+namespace sobrou.Application.Services;
 
 public class UserService(
     IUserRepository userRepository, 

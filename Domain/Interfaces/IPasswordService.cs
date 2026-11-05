@@ -1,4 +1,4 @@
-namespace myfinance.Infrastructure.Repositories.Interfaces;
+namespace sobrou.Infrastructure.Repositories.Interfaces;
 
 public interface IPasswordService
 {

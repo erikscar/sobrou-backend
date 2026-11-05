@@ -1,6 +1,6 @@
-using myfinance.Domain.DTOS;
+using sobrou.Domain.DTOS;
 
-namespace myfinance.Application.Services.Interfaces;
+namespace sobrou.Application.Services.Interfaces;
 
 public interface ITokenService
 {

@@ -1,7 +1,7 @@
 using System.Security.Cryptography;
-using myfinance.Infrastructure.Repositories.Interfaces;
+using sobrou.Infrastructure.Repositories.Interfaces;
 
-namespace myfinance.Infrastructure.Services;
+namespace sobrou.Infrastructure.Services;
 
 public class PasswordService : IPasswordService
 {

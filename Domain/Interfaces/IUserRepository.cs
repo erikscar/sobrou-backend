@@ -1,7 +1,7 @@
 using System;
-using myfinance.Domain.Entities;
+using sobrou.Domain.Entities;
 
-namespace myfinance.Infrastructure.Repositories.Interfaces;
+namespace sobrou.Infrastructure.Repositories.Interfaces;
 
 public interface IUserRepository
 {

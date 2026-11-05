@@ -1,4 +1,4 @@
-namespace myfinance.Shared.Results;
+namespace sobrou.Shared.Results;
 
 public sealed record Failure(string Message)
 {

@@ -1,35 +1,35 @@
 using System;
 using Microsoft.EntityFrameworkCore;
-using myfinance.Domain.Entities;
-using myfinance.Infrastructure.Context;
-using myfinance.Infrastructure.Repositories.Interfaces;
+using sobrou.Domain.Entities;
+using sobrou.Infrastructure.Context;
+using sobrou.Infrastructure.Repositories.Interfaces;
 
-namespace myfinance.Infrastructure.Repositories;
+namespace sobrou.Infrastructure.Repositories;
 
 public class UserRepository : IUserRepository
 {
-    private MyFinanceContext _myfinanceContext;
+    private SobrouContext _sobrouContext;
 
-    public UserRepository(MyFinanceContext myFinanceContext)
+    public UserRepository(SobrouContext sobrouContext)
     {
-        _myfinanceContext = myFinanceContext;
+        _sobrouContext = sobrouContext;
     }
 
     public async Task<List<User>> GetUsersAsync()
     {
-        return await _myfinanceContext.Users.ToListAsync();
+        return await _sobrouContext.Users.ToListAsync();
     }
 
     public async Task<User?> FindUserByEmail(string email)
     {
-        return await _myfinanceContext.Users.FirstOrDefaultAsync(u => u.Email == email);
+        return await _sobrouContext.Users.FirstOrDefaultAsync(u => u.Email == email);
     }
 
     public async Task<User?> CreateUserAsync(User user)
     {
-        await _myfinanceContext.Users.AddAsync(user);
+        await _sobrouContext.Users.AddAsync(user);
 
-        await _myfinanceContext.SaveChangesAsync();
+        await _sobrouContext.SaveChangesAsync();
 
         return user;
     }

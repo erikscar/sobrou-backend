@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
-using myfinance.Application.Services.Interfaces;
-using myfinance.Domain.DTOS;
+using sobrou.Application.Services.Interfaces;
+using sobrou.Domain.DTOS;
 
-namespace myfinance.API.Controllers
+namespace sobrou.API.Controllers
 {
     [Route("[controller]")]
     [ApiController]

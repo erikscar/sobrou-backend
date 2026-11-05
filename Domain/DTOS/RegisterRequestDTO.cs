@@ -1,4 +1,4 @@
-namespace myfinance.Domain.DTOS;
+namespace sobrou.Domain.DTOS;
 
 public record RegisterRequestDTO
 {

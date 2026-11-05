@@ -1,4 +1,4 @@
-namespace myfinance.Domain.Entities;
+namespace sobrou.Domain.Entities;
 
 public class User
 {

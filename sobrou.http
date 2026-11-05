@@ -1,0 +1,6 @@
+@sobrou_HostAddress = http://localhost:5151
+
+GET {{sobrou_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

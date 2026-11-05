@@ -1,4 +1,4 @@
-namespace myfinance.API.Errors;
+namespace sobrou.API.Errors;
 
 public record Error
 (

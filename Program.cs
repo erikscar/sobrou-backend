@@ -5,15 +5,15 @@ using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using myfinance.API.Errors;
-using myfinance.Application.Services;
-using myfinance.Application.Services.Interfaces;
-using myfinance.Domain.Entities;
-using myfinance.Infrastructure.Config;
-using myfinance.Infrastructure.Context;
-using myfinance.Infrastructure.Repositories;
-using myfinance.Infrastructure.Repositories.Interfaces;
-using myfinance.Infrastructure.Services;
+using sobrou.API.Errors;
+using sobrou.Application.Services;
+using sobrou.Application.Services.Interfaces;
+using sobrou.Domain.Entities;
+using sobrou.Infrastructure.Config;
+using sobrou.Infrastructure.Context;
+using sobrou.Infrastructure.Repositories;
+using sobrou.Infrastructure.Repositories.Interfaces;
+using sobrou.Infrastructure.Services;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,16 +21,16 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
-builder.Services.AddDbContext<MyFinanceContext>(options =>
+builder.Services.AddDbContext<SobrouContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("MyFinanceDatabase"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SobrouDatabase"));
 });
 
 builder.Services.AddControllers();
 
 ConfigurationManager config = builder.Configuration;
 
-builder.Services.Configure<MyFinanceSettings>(config.GetSection("AppParameters"));
+builder.Services.Configure<SobrouSettings>(config.GetSection("AppParameters"));
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
